@@ -1,1 +1,1 @@
-web: gunicorn warrior.wsgi:application --log-file -
+web: gunicorn snoussiapp.wsgi:application --log-file -
