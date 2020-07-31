@@ -165,17 +165,15 @@ LOGIN_URL = '/login/'
 AUTH_USER_MODEL = 'user.User'
 
 # Configurations
-'''
-LOCALHOST = 'algorisoft.com'
-'''
+
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 
 # Email
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'mail.in-planet.net'
+EMAIL_HOST = 'jggomez8@outlook.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'wdavila@in-planet.net'
+EMAIL_HOST_USER = 'jggomez8@outlook.com'
 EMAIL_HOST_PASSWORD = 'inplaneT.2018'
 EMAIL_BACKEND = 'core.libs.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
