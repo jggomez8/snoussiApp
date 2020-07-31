@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0.3/ref/settings/#databases
 
-DATABASES = db.HEROKU
+DATABASES = db.DATABASES
 '''
 DATABASES = {
     'default': dj_database_url.config()

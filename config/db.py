@@ -53,7 +53,7 @@ SQLSERVER = {
     },
 }
 
-HEROKU = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dehl1opbffsq44',
