@@ -1,0 +1,111 @@
+{% load static %}
+{% load security_tags %}
+<nav class="main-header navbar navbar-expand {{ comp.navbar }}">
+    <div class="container">
+        <a href="{% url 'home' %}" class="navbar-brand {{ comp.brand_logo }}">
+            <img src="{{ comp.get_image }}" alt="AdminLTE Logo"
+                 class="brand-image" style="opacity: .8">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="{% url 'home' %}" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a class="nav-link"><i class="fas fa-user-shield"></i> Bienvenido {{ request.user.username }}</a>
+            </li>
+            {% if not home %}
+                <li class="nav-item dropdown">
+                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       class="nav-link dropdown-toggle"><i class="fas fa-folder-open"></i></a>
+                    <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                        {% for m in request.session.group.id|get_modules_type_session %}
+                            <li class="dropdown-submenu dropdown-hover">
+                                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false" class="dropdown-item dropdown-toggle"><i
+                                        class="{{ m.get_icon }}"></i> {{ m.name }}</a>
+                                <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                                    {% for mod in m.id|get_modules_vertical_session:request.session.group.id %}
+                                        <li>
+                                            <a tabindex="-1" href="{{ mod.url }}" class="dropdown-item">
+                                                <i class="{{ mod.get_icon }}"></i> {{ mod.name }}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% endfor %}
+                        {% if request.session.group.id|get_modules_horizontal_session %}
+                            <li class="dropdown-divider"></li>
+                        {% endif %}
+                        {% for m in request.session.group.id|get_modules_horizontal_session %}
+                            <li><a class="dropdown-item" href="{{ m.url }}"><i
+                                    class="{{ m.get_icon }}"></i> {{ m.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endif %}
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            {% if user.groups.all %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-user"></i> {{ request.session.group.name }}
+                        {% if user.groups.all|length > 1 %}
+                            <i class="fas fa-caret-down"></i>
+                        {% endif %}
+                    </a>
+                    {% if user.groups.all|length > 1 %}
+                        <div class="dropdown-menu dropdown-menu-right">
+                            {% for g in user.groups.all %}
+                                {% if g.id != request.session.group.id %}
+                                    <a href="{% url 'user_change_profile' g.id %}" class="dropdown-item">
+                                        <i class="fas fa-male"></i> {{ g.name }}
+                                    </a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </li>
+            {% endif %}
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="fas fa-users-cog"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <span class="dropdown-header">
+                        <small>
+                            Último Acceso: {{ request.user.last_login|date }}<br>
+                            {{ request.user.email }}
+                         </small>
+                    </span>
+                    <div class="dropdown-divider"></div>
+                    <a href="{% url 'user_profile' %}" class="dropdown-item">
+                        <i class="fas fa-edit"></i> Editar perfil
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="{% url 'user_change_password' %}" class="dropdown-item">
+                        <i class="fas fa-lock"></i> Editar password
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item dropdown-footer">
+                        {% if not request.session.group is None %}
+                            <p>
+                                <b>Bienvenido al sistema, su perfil
+                                    es {{ request.session.group.name }}</b><br>
+                                <small>Este sistema te permitira realizar diferentes actividades</small>
+                            </p>
+                        {% endif %}
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}">
+                    <i class="fas fa-power-off" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

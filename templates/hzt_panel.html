@@ -1,0 +1,158 @@
+{% extends 'skin.html' %}
+{% load static %}
+{% load security_tags %}
+{% load widget_tweaks %}
+{% block section_content %}
+    <div class="content-wrapper">
+        <section class="content-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i
+                                        class="fas fa-home"></i> Panel</a></li>
+                                {% block breadcrumb_li %}
+                                    <li class="breadcrumb-item active" aria-current="page"><a
+                                            href="{{ request.session.module.url }}"><i
+                                            class="{{ request.session.module.get_icon }}"></i> {{ request.session.module.name }}
+                                    </a></li>
+                                {% endblock %}
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-widget widget-user-2">
+                            <div class="widget-user-header bg-blue">
+                                <div class="widget-user-image">
+                                    <img class="img-circle elevation-2" src="{{ request.user.get_image }}"
+                                         alt="User Avatar">
+                                </div>
+                                <h3 class="widget-user-username">{{ request.user.get_full_name }}</h3>
+                                <h5 class="widget-user-desc">{{ request.user.email }}</h5>
+                            </div>
+                            <div class="card-footer p-0" style="background-color: white;">
+                                <ul class="nav flex-column nav-info-user">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            Username: <span class="float-right">{{ request.user.username }}</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            Nombres: <span class="float-right">{{ request.user.first_name }}</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            Apellidos: <span class="float-right">{{ request.user.last_name }}</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            Cédula: <span class="float-right">{{ request.user.dni }}</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            Email: <span class="float-right">{{ request.user.email }}</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            Fecha de Registro: <span
+                                                class="float-right">{{ request.user.date_joined }}</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            Último acceso: <span
+                                                class="float-right">{{ request.user.last_login }}</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <div class="row">
+                                    <div class="col col-lg-6">
+                                        <a href="{% url 'user_profile' %}"
+                                           class="btn btn-success btn-flat btn-block">
+                                            <i class="fas fa-user" aria-hidden="true"></i>
+                                            Perfil
+                                        </a>
+                                    </div>
+                                    <div class="col col-lg-6">
+                                        <a href="{% url 'user_change_password' %}"
+                                           class="btn btn-warning btn-flat btn-block">
+                                            <i class="fas fa-lock" aria-hidden="true"></i>
+                                            Password
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card {{ comp.card }}">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <i class="fas fa-home"></i>
+                                    {{ title }}
+                                </h3>
+                                <div class="card-tools">
+                                    <small>Su último acceso al sistema fue el {{ request.user.last_login }}</small>
+                                </div>
+                            </div>
+                            <div class="card-body" style="display: block;">
+                                <div class="container-fluid panel-module">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        {% for m in request.session.group.id|get_modules_type_session %}
+                                            <li class="nav-item">
+                                                <a class="nav-link{% if forloop.first %} active{% endif %}"
+                                                   data-toggle="tab" href="#tab{{ forloop.counter }}">
+                                                    {{ m.name }}
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <div class="tab-content">
+                                        <br>
+                                        {% for m in request.session.group.id|get_modules_type_session %}
+                                            <div id="tab{{ forloop.counter }}"
+                                                 class="tab-pane{% if forloop.first %} active{% endif %}">
+                                                {% for mod in m.id|get_modules_vertical_session:request.session.group.id %}
+                                                    <div class="span12">
+                                                        <a class="icon" href="{{ mod.url }}">
+                                                            {% if mod.image %}
+                                                                <img src="{{ mod.get_image }}"
+                                                                     class="img-fluid mx-auto d-block">
+                                                            {% else %}
+                                                                <i class="{{ mod.get_icon }} fa-5x"></i>
+                                                            {% endif %}
+                                                            <div class="iconname">
+                                                                <div class="pd">
+                                                                    <h4 class="tituloicon">{{ mod.name }}</h4>
+                                                                    <span class="icondesc">{{ mod.description }}</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+{% endblock %}

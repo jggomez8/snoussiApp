@@ -1,0 +1,165 @@
+{% extends 'form.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block head_form %}
+    <script src="{% static 'lib/select2-4.0.13/js/select2.min.js' %}"></script>
+    <script src="{% static 'lib/select2-4.0.13/js/i18n/es.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'lib/select2-4.0.13/css/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lib/select2-4.0.13/css/select2-bootstrap4.min.css' %}">
+    <script src="{% static 'company/js/form.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <form class="form" method="post" action="." enctype="multipart/form-data" id="frmForm"
+          data-url="{{ list_url }}">
+        <div class="card {{ comp.card }}">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="fas fa-edit"></i>
+                    {{ title }}
+                </h3>
+            </div>
+            <div class="card-body" style="display: block;">
+                <div class="container-fluid">
+                    <input type="hidden" name="action" id="action" value="{{ action }}">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home">Información <i class="fa"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu1">Plantilla <i class="fa"></i></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane container-fluid active" id="home">
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>{{ form.name.label }}:</label>
+                                        {{ form.name|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>{{ form.system_name.label }}:</label>
+                                        {{ form.system_name|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>{{ form.address.label }}:</label>
+                                        {{ form.address|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>{{ form.icon.label }}:</label>
+                                        {{ form.icon|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>{{ form.ruc.label }}:</label>
+                                        {{ form.ruc|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>{{ form.phone.label }}:</label>
+                                        {{ form.phone|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>{{ form.mobile.label }}:</label>
+                                        {{ form.mobile|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>{{ form.email.label }}:</label>
+                                        {{ form.email|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>{{ form.name.label }}:</label>
+                                        {{ form.image|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>{{ form.mission.label }}:</label>
+                                        {{ form.mission|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>{{ form.vision.label }}:</label>
+                                        {{ form.vision|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>{{ form.about_us.label }}:</label>
+                                        {{ form.about_us|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container-fluid fade" id="menu1">
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>{{ form.layout.label }}:</label>
+                                        {{ form.layout|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>{{ form.card.label }}:</label>
+                                        {{ form.card|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>{{ form.navbar.label }}:</label>
+                                        {{ form.navbar|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>{{ form.brand_logo.label }}:</label>
+                                        {{ form.brand_logo|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>{{ form.sidebar.label }}:</label>
+                                        {{ form.sidebar|add_class:'form-control'|attr:'autocomplete:off' }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary btn-flat">
+                    <i class="fas fa-save"></i> Guardar registro
+                </button>
+                <a href="{{ list_url }}" class="btn btn-danger btn-flat">
+                    <i class="fas fa-times"></i> Cancelar
+                </a>
+            </div>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,254 @@
+{% extends 'report.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block head_report %}
+    <script src="{% static 'lib/highcharts-8.1.2/highcharts.js' %}"></script>
+    <script src="{% static 'lib/highcharts-8.1.2/modules/exporting.js' %}"></script>
+    <script src="{% static 'lib/highcharts-8.1.2/modules/export-data.js' %}"></script>
+    <script src="{% static 'lib/highcharts-8.1.2/modules/accessibility.js' %}"></script>
+    <script src="{% static 'reports/js/index.js' %}"></script>
+{% endblock %}
+{% block content_report %}
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home">Estadística</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu1">Individual</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane container-fluid active" id="home"><br>
+                    <h5>Sobre nuestro personal</h5>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card card-secondary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Género</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div id="graph_gender"></div>
+                                    <script>
+                                        Highcharts.chart('graph_gender', {
+                                            chart: {
+                                                plotBackgroundColor: null,
+                                                plotBorderWidth: null,
+                                                plotShadow: false,
+                                                type: 'pie'
+                                            },
+                                            title: {
+                                                text: ''
+                                            },
+                                            tooltip: {
+                                                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                                            },
+                                            accessibility: {
+                                                point: {
+                                                    valueSuffix: '%'
+                                                }
+                                            },
+                                            plotOptions: {
+                                                pie: {
+                                                    allowPointSelect: true,
+                                                    cursor: 'pointer',
+                                                    dataLabels: {
+                                                        enabled: true,
+                                                        format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                                                    }
+                                                }
+                                            },
+                                            series: [{
+                                                name: 'Brands',
+                                                colorByPoint: true,
+                                                data: {{ graph_gender|safe }}
+                                            }]
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card card-secondary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Modalidad de Trabajo</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div id="graph_dependence"></div>
+                                    <script>
+                                        Highcharts.chart('graph_dependence', {
+                                            chart: {
+                                                plotBackgroundColor: null,
+                                                plotBorderWidth: null,
+                                                plotShadow: false,
+                                                type: 'pie'
+                                            },
+                                            title: {
+                                                text: ''
+                                            },
+                                            tooltip: {
+                                                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                                            },
+                                            accessibility: {
+                                                point: {
+                                                    valueSuffix: '%'
+                                                }
+                                            },
+                                            plotOptions: {
+                                                pie: {
+                                                    allowPointSelect: true,
+                                                    cursor: 'pointer',
+                                                    dataLabels: {
+                                                        enabled: true,
+                                                        format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                                                    }
+                                                }
+                                            },
+                                            series: [{
+                                                name: 'Brands',
+                                                colorByPoint: true,
+                                                data: {{ graph_dependence|safe }}
+                                            }]
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5>Afectación de la pandemia en nuestra empresa</h5>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card card-secondary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Contagiados por Género</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div id="graph_infected_gender"></div>
+                                    <script>
+                                        Highcharts.chart('graph_infected_gender', {
+                                            chart: {
+                                                plotBackgroundColor: null,
+                                                plotBorderWidth: null,
+                                                plotShadow: false,
+                                                type: 'pie'
+                                            },
+                                            title: {
+                                                text: ''
+                                            },
+                                            tooltip: {
+                                                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                                            },
+                                            accessibility: {
+                                                point: {
+                                                    valueSuffix: '%'
+                                                }
+                                            },
+                                            plotOptions: {
+                                                pie: {
+                                                    allowPointSelect: true,
+                                                    cursor: 'pointer',
+                                                    dataLabels: {
+                                                        enabled: true,
+                                                        format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                                                    }
+                                                }
+                                            },
+                                            series: [{
+                                                name: 'Brands',
+                                                colorByPoint: true,
+                                                data: {{ graph_infected_gender|safe }}
+                                            }]
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card card-secondary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Áreas contagiados</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div id="infected_areas"></div>
+                                    <script>
+                                        Highcharts.chart('infected_areas', {
+                                            chart: {
+                                                plotBackgroundColor: null,
+                                                plotBorderWidth: null,
+                                                plotShadow: false,
+                                                type: 'pie'
+                                            },
+                                            title: {
+                                                text: ''
+                                            },
+                                            tooltip: {
+                                                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                                            },
+                                            accessibility: {
+                                                point: {
+                                                    valueSuffix: '%'
+                                                }
+                                            },
+                                            plotOptions: {
+                                                pie: {
+                                                    allowPointSelect: true,
+                                                    cursor: 'pointer',
+                                                    dataLabels: {
+                                                        enabled: true,
+                                                        format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                                                    }
+                                                }
+                                            },
+                                            series: [{
+                                                name: 'Brands',
+                                                colorByPoint: true,
+                                                data: {{ graph_infected_areas|safe }}
+                                            }]
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container-fluid fade" id="menu1"><br>
+                    <h5>Personal que se encuentra contagiado</h5>
+                    <table width="100%" class="table table-bordered table-md" id="tblEmployee">
+                        <thead>
+                        <tr>
+                            <th>Nombres</th>
+                            <th>Genero</th>
+                            <th>Edad</th>
+                            <th>Dependencia</th>
+                            <th>Opciones</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <p>
+                        <b>Contagiados: </b><span class="infected"></span><br>
+                        <b>Cerco Epidemiológico: </b><span class="epidemiological_fence"></span>
+                    </p>
+                    <hr>
+                    <h5>Personal que no se encuentra contagiado</h5>
+                    <table width="100%" class="table table-bordered table-md" id="tblNotInfected">
+                        <thead>
+                        <tr>
+                            <th>Nombres</th>
+                            <th>Genero</th>
+                            <th>Edad</th>
+                            <th>Dependencia</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

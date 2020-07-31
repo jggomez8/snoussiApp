@@ -1,0 +1,70 @@
+{% extends 'form.html' %}
+{% load static %}
+{% block head_form %}
+    <script src="{% static 'symptomsemp/employee/js/form.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <form class="form" method="post" action="." enctype="multipart/form-data" id="frmForm"
+          data-url="{{ list_url }}">
+        <div class="card {{ comp.card }}">
+            <div class="card-header">
+                <h3 class="card-title">
+                    {% if action == 'add' %}
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                    {% else %}
+                        <i class="fas fa-edit" aria-hidden="true"></i>
+                    {% endif %}
+                    {{ title }}
+                </h3>
+                <div class="card-tools">
+                    <small>Su último acceso al sistema fue el {{ request.user.last_login }}</small>
+                </div>
+            </div>
+            <div class="card-body" style="display: block;">
+                <div class="container-fluid">
+                    <input type="hidden" name="action" id="action" value="{{ action }}">
+                    <h4>Registro de Sintomatologia Diaria</h4>
+                    <p>Acontinuación, rellene los siguientes campos para complementar la ficha sintomatologica
+                        diaria.</p>
+                    <div class="form-group">
+                        <label>Temperatura Corporal: (Oc)</label>
+                        <input type="text" class="form-control" autocomplete="off" placeholder="Ingrese un valor" name="temperature">
+                    </div>
+                    <hr>
+                    <p>En caso que usted presente o haya presentado algunos de estos síntomas durante los últimos 5
+                        dias seleccione las casillas correspondientes.
+                    <table width="100%" class="table table-bordered table-md" id="tblSymptoms">
+                        <thead>
+                        <tr>
+                            <th>Sintoma</th>
+                            <th>¿Tiene este sintoma?</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% block box_footer %}
+                <div class="card-footer">
+                    {% block buttons %}
+                        <button type="submit" class="btn btn-primary btn-flat">
+                            <i class="fas fa-save" aria-hidden="true"></i> Guardar registro
+                        </button>
+                        <a href="{{ list_url }}" class="btn btn-danger btn-flat">
+                            <i class="fas fa-times"></i> Cancelar
+                        </a>
+                    {% endblock %}
+                </div>
+            {% endblock %}
+        </div>
+    </form>
+    <script>
+        var symptoms = {{ symptoms|safe }};
+        $('input[name="temperature"]').val(symptoms[0].cant);
+        symptoms.splice(0, 1);
+        console.log(symptoms);
+        getDataSymptoms(symptoms);
+    </script>
+{% endblock %}

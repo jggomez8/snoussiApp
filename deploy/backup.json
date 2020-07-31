@@ -1,0 +1,1716 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "security",
+    "model": "accessusers"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "security",
+    "model": "company"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "security",
+    "model": "databasebackups"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "security",
+    "model": "moduletype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "security",
+    "model": "module"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "security",
+    "model": "groupmodule"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "user",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "rrhh",
+    "model": "employee"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "rrhh",
+    "model": "symptomsemp"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "rrhh",
+    "model": "biometric"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "129rfvk35dasfa8395iwg4aigef1u4ay",
+  "fields": {
+    "session_data": "Njk2MzQzYmMwMGI3N2QxNDA0ZGY5YmY5ZTc0NTJiN2IyZTZiZmJjMTqABJXiAgAAAAAAAH2UKIwNX2F1dGhfdXNlcl9pZJSMATGUjBJfYXV0aF91c2VyX2JhY2tlbmSUjClkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZJSMD19hdXRoX3VzZXJfaGFzaJSMKDNjZDMwZmM1MjU3OWEyMTM4NWE5N2I0ODE2MTE3ZTIyYjI5Mjk5NmGUjAVncm91cJSMFWRqYW5nby5kYi5tb2RlbHMuYmFzZZSMDm1vZGVsX3VucGlja2xllJOUjARhdXRolIwFR3JvdXCUhpSFlFKUfZQojAZfc3RhdGWUaAiMCk1vZGVsU3RhdGWUk5QpgZR9lCiMBmFkZGluZ5SJjAJkYpSMB2RlZmF1bHSUdWKMAmlklEsBjARuYW1llIwNQWRtaW5pc3RyYWRvcpSMD19kamFuZ29fdmVyc2lvbpSMBTMuMC4zlHVijARwYXRolIwOL3JyaGgvcmVwb3J0cy+UjAZtb2R1bGWUaAqMCHNlY3VyaXR5lIwGTW9kdWxllIaUhZRSlH2UKIwGX3N0YXRllGgTKYGUfZQojAxmaWVsZHNfY2FjaGWUfZRoFoloF4wHZGVmYXVsdJR1YowCaWSUSxCMA3VybJSMDi9ycmhoL3JlcG9ydHMvlIwEbmFtZZSMEFJlcG9ydGVzIERpYXJpb3OUjAd0eXBlX2lklEsEjAtkZXNjcmlwdGlvbpSMRVBlcm1pdGUgYWRtaW5pc3RyYXIgbG9zIHJlcG9ydGVzIGRpYXJpb3MgZGUgbG9zIGVtcGxlYWRvcyBkZWwgc2lzdGVtYZSMBGljb26UjBBmYXMgZmEtY2hhcnQtcGlllIwFaW1hZ2WUjACUjAtpc192ZXJ0aWNhbJSIjAlpc19hY3RpdmWUiIwKaXNfdmlzaWJsZZSIjA9jb250ZW50X3R5cGVfaWSUTowPX2RqYW5nb192ZXJzaW9ulIwFMy4wLjOUdWJ1Lg==",
+    "expire_date": "2020-08-12T14:18:41.896Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "beu06l7fnnoc159nkani1w8za5qg0zwl",
+  "fields": {
+    "session_data": "YzBiZTZlOWY2MTJiYThiYjQyYjc5ZTgyZTJlYTBlODBhODc0ZjkyZDqABJXfAgAAAAAAAH2UKIwNX2F1dGhfdXNlcl9pZJSMATGUjBJfYXV0aF91c2VyX2JhY2tlbmSUjClkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZJSMD19hdXRoX3VzZXJfaGFzaJSMKDNjZDMwZmM1MjU3OWEyMTM4NWE5N2I0ODE2MTE3ZTIyYjI5Mjk5NmGUjAVncm91cJSMFWRqYW5nby5kYi5tb2RlbHMuYmFzZZSMDm1vZGVsX3VucGlja2xllJOUjARhdXRolIwFR3JvdXCUhpSFlFKUfZQojAZfc3RhdGWUaAiMCk1vZGVsU3RhdGWUk5QpgZR9lCiMBmFkZGluZ5SJjAJkYpSMB2RlZmF1bHSUdWKMAmlklEsDjARuYW1llIwKU3VwZXJhZG1pbpSMD19kamFuZ29fdmVyc2lvbpSMBTMuMC4zlHVijARwYXRolIwOL3JyaGgvcmVwb3J0cy+UjAZtb2R1bGWUaAqMCHNlY3VyaXR5lIwGTW9kdWxllIaUhZRSlH2UKIwGX3N0YXRllGgTKYGUfZQojAxmaWVsZHNfY2FjaGWUfZRoFoloF4wHZGVmYXVsdJR1YowCaWSUSxCMA3VybJSMDi9ycmhoL3JlcG9ydHMvlIwEbmFtZZSMEFJlcG9ydGVzIERpYXJpb3OUjAd0eXBlX2lklEsEjAtkZXNjcmlwdGlvbpSMRVBlcm1pdGUgYWRtaW5pc3RyYXIgbG9zIHJlcG9ydGVzIGRpYXJpb3MgZGUgbG9zIGVtcGxlYWRvcyBkZWwgc2lzdGVtYZSMBGljb26UjBBmYXMgZmEtY2hhcnQtcGlllIwFaW1hZ2WUjACUjAtpc192ZXJ0aWNhbJSIjAlpc19hY3RpdmWUiIwKaXNfdmlzaWJsZZSIjA9jb250ZW50X3R5cGVfaWSUTowPX2RqYW5nb192ZXJzaW9ulIwFMy4wLjOUdWJ1Lg==",
+    "expire_date": "2020-08-12T21:09:05.830Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rtw4p1b76j699viib5wx036qfzunon4x",
+  "fields": {
+    "session_data": "YjIyNTM1ZmFhMTEwMmRlZGRjNDE2MTIzN2I5Zjc1YjIzZWNjNGFmMzqABJXAAgAAAAAAAH2UKIwNX2F1dGhfdXNlcl9pZJSMATGUjBJfYXV0aF91c2VyX2JhY2tlbmSUjClkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZJSMD19hdXRoX3VzZXJfaGFzaJSMKDNjZDMwZmM1MjU3OWEyMTM4NWE5N2I0ODE2MTE3ZTIyYjI5Mjk5NmGUjAVncm91cJSMFWRqYW5nby5kYi5tb2RlbHMuYmFzZZSMDm1vZGVsX3VucGlja2xllJOUjARhdXRolIwFR3JvdXCUhpSFlFKUfZQojAZfc3RhdGWUaAiMCk1vZGVsU3RhdGWUk5QpgZR9lCiMBmFkZGluZ5SJjAJkYpSMB2RlZmF1bHSUdWKMAmlklEsDjARuYW1llIwKU3VwZXJhZG1pbpSMD19kamFuZ29fdmVyc2lvbpSMBTMuMC4zlHVijARwYXRolIwOL3JyaGgvcmVwb3J0cy+UjAZtb2R1bGWUaAqMCHNlY3VyaXR5lIwGTW9kdWxllIaUhZRSlH2UKGgRaBMpgZR9lCiMDGZpZWxkc19jYWNoZZR9lGgWiWgXjAdkZWZhdWx0lHViaBlLEIwDdXJslIwOL3JyaGgvcmVwb3J0cy+UaBqMEFJlcG9ydGVzIERpYXJpb3OUjAd0eXBlX2lklEsEjAtkZXNjcmlwdGlvbpSMRVBlcm1pdGUgYWRtaW5pc3RyYXIgbG9zIHJlcG9ydGVzIGRpYXJpb3MgZGUgbG9zIGVtcGxlYWRvcyBkZWwgc2lzdGVtYZSMBGljb26UjBBmYXMgZmEtY2hhcnQtcGlllIwFaW1hZ2WUjACUjAtpc192ZXJ0aWNhbJSIjAlpc19hY3RpdmWUiIwKaXNfdmlzaWJsZZSIjA9jb250ZW50X3R5cGVfaWSUTmgcjAUzLjAuM5R1YnUu",
+    "expire_date": "2020-08-12T15:44:04.785Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zw3cufamz47ntgbdwzld1yl8s31fqu13",
+  "fields": {
+    "session_data": "YjIyNTM1ZmFhMTEwMmRlZGRjNDE2MTIzN2I5Zjc1YjIzZWNjNGFmMzqABJXAAgAAAAAAAH2UKIwNX2F1dGhfdXNlcl9pZJSMATGUjBJfYXV0aF91c2VyX2JhY2tlbmSUjClkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZJSMD19hdXRoX3VzZXJfaGFzaJSMKDNjZDMwZmM1MjU3OWEyMTM4NWE5N2I0ODE2MTE3ZTIyYjI5Mjk5NmGUjAVncm91cJSMFWRqYW5nby5kYi5tb2RlbHMuYmFzZZSMDm1vZGVsX3VucGlja2xllJOUjARhdXRolIwFR3JvdXCUhpSFlFKUfZQojAZfc3RhdGWUaAiMCk1vZGVsU3RhdGWUk5QpgZR9lCiMBmFkZGluZ5SJjAJkYpSMB2RlZmF1bHSUdWKMAmlklEsDjARuYW1llIwKU3VwZXJhZG1pbpSMD19kamFuZ29fdmVyc2lvbpSMBTMuMC4zlHVijARwYXRolIwOL3JyaGgvcmVwb3J0cy+UjAZtb2R1bGWUaAqMCHNlY3VyaXR5lIwGTW9kdWxllIaUhZRSlH2UKGgRaBMpgZR9lCiMDGZpZWxkc19jYWNoZZR9lGgWiWgXjAdkZWZhdWx0lHViaBlLEIwDdXJslIwOL3JyaGgvcmVwb3J0cy+UaBqMEFJlcG9ydGVzIERpYXJpb3OUjAd0eXBlX2lklEsEjAtkZXNjcmlwdGlvbpSMRVBlcm1pdGUgYWRtaW5pc3RyYXIgbG9zIHJlcG9ydGVzIGRpYXJpb3MgZGUgbG9zIGVtcGxlYWRvcyBkZWwgc2lzdGVtYZSMBGljb26UjBBmYXMgZmEtY2hhcnQtcGlllIwFaW1hZ2WUjACUjAtpc192ZXJ0aWNhbJSIjAlpc19hY3RpdmWUiIwKaXNfdmlzaWJsZZSIjA9jb250ZW50X3R5cGVfaWSUTmgcjAUzLjAuM5R1YnUu",
+    "expire_date": "2020-08-12T19:37:36.129Z"
+  }
+},
+{
+  "model": "security.company",
+  "pk": 1,
+  "fields": {
+    "name": "Algorisoft",
+    "system_name": "AlgoriSoft",
+    "image": "",
+    "icon": "fas fa-laptop-code",
+    "ruc": "0928363993",
+    "phone": "042977557",
+    "mobile": "0979014551",
+    "email": "williamjair94@hotmail.com",
+    "address": "Cdla.Dager, avda. tumbez y carchi",
+    "mission": "Sin detalles",
+    "vision": "Sin detalles",
+    "about_us": "Sin detalles",
+    "layout": 2,
+    "card": "card-primary",
+    "navbar": "navbar-dark navbar-primary",
+    "brand_logo": "navbar-primary",
+    "sidebar": "sidebar-dark-primary"
+  }
+},
+{
+  "model": "security.moduletype",
+  "pk": 1,
+  "fields": {
+    "name": "Seguridad",
+    "icon": "fas fa-lock",
+    "is_active": true
+  }
+},
+{
+  "model": "security.moduletype",
+  "pk": 2,
+  "fields": {
+    "name": "Usuarios",
+    "icon": "fas fa-users",
+    "is_active": true
+  }
+},
+{
+  "model": "security.moduletype",
+  "pk": 3,
+  "fields": {
+    "name": "Administraci\u00f3n",
+    "icon": "fas fa-tools",
+    "is_active": true
+  }
+},
+{
+  "model": "security.moduletype",
+  "pk": 4,
+  "fields": {
+    "name": "RRHH",
+    "icon": "fas fa-user-clock",
+    "is_active": true
+  }
+},
+{
+  "model": "security.module",
+  "pk": 1,
+  "fields": {
+    "url": "/security/module/type/",
+    "name": "Tipos de M\u00f3dulos",
+    "type": 1,
+    "description": "Permite administrar los tipos de m\u00f3dulos del sistema",
+    "icon": "fas fa-door-open",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 9
+  }
+},
+{
+  "model": "security.module",
+  "pk": 2,
+  "fields": {
+    "url": "/security/module/",
+    "name": "M\u00f3dulos",
+    "type": 1,
+    "description": "Permite administrar los m\u00f3dulos del sistema",
+    "icon": "fas fa-th-large",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 10
+  }
+},
+{
+  "model": "security.module",
+  "pk": 3,
+  "fields": {
+    "url": "/security/group/",
+    "name": "Grupos",
+    "type": 1,
+    "description": "Permite administrar los grupos de usuarios del sistema",
+    "icon": "fas fa-users",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 3
+  }
+},
+{
+  "model": "security.module",
+  "pk": 4,
+  "fields": {
+    "url": "/security/access/users/",
+    "name": "Accesos",
+    "type": 2,
+    "description": "Permite administrar los accesos de los usuarios",
+    "icon": "fas fa-user-secret",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 6
+  }
+},
+{
+  "model": "security.module",
+  "pk": 5,
+  "fields": {
+    "url": "/security/database/backups/",
+    "name": "Respaldos",
+    "type": 1,
+    "description": "Permite administrar los respaldos de base de datos",
+    "icon": "fas fa-database",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 8
+  }
+},
+{
+  "model": "security.module",
+  "pk": 6,
+  "fields": {
+    "url": "/security/company/update/",
+    "name": "Compa\u00f1ia",
+    "type": 3,
+    "description": "Permite actualizar la informaci\u00f3n de la compa\u00f1ia",
+    "icon": "fas fa-building",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 7
+  }
+},
+{
+  "model": "security.module",
+  "pk": 7,
+  "fields": {
+    "url": "/security/company/setting/",
+    "name": "Conf. de la plantilla",
+    "type": 3,
+    "description": "Permite configurar los datos de la plantilla",
+    "icon": "fas fa-tools",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": null
+  }
+},
+{
+  "model": "security.module",
+  "pk": 8,
+  "fields": {
+    "url": "/user/admin/",
+    "name": "Administradores",
+    "type": 2,
+    "description": "Permite administrar a los administradores del sistema",
+    "icon": "fas fa-user",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 12
+  }
+},
+{
+  "model": "security.module",
+  "pk": 9,
+  "fields": {
+    "url": "/user/change/password/",
+    "name": "Cambiar password",
+    "type": null,
+    "description": "Permite cambiar tu password de tu cuenta",
+    "icon": "fas fa-key",
+    "image": "",
+    "is_vertical": false,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": null
+  }
+},
+{
+  "model": "security.module",
+  "pk": 10,
+  "fields": {
+    "url": "/user/change/profile/",
+    "name": "Editar perfil",
+    "type": null,
+    "description": "Permite cambiar la informaci\u00f3n de tu cuenta",
+    "icon": "fas fa-user",
+    "image": "",
+    "is_vertical": false,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": null
+  }
+},
+{
+  "model": "security.module",
+  "pk": 11,
+  "fields": {
+    "url": "/rrhh/employee/",
+    "name": "Empleados",
+    "type": 4,
+    "description": "Permite administrar a los empleados del sistema",
+    "icon": "fas fa-user-tag",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 13
+  }
+},
+{
+  "model": "security.module",
+  "pk": 12,
+  "fields": {
+    "url": "/rrhh/symptomsemp/admin/",
+    "name": "Sintomas de Empleados",
+    "type": 4,
+    "description": "Permite administrar los sintomas de los empleados del sistema",
+    "icon": "fas fa-laptop-medical",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 14
+  }
+},
+{
+  "model": "security.module",
+  "pk": 13,
+  "fields": {
+    "url": "/rrhh/symptomsemp/employee/",
+    "name": "Sintomas de Empleados",
+    "type": 4,
+    "description": "Permite administrar los sintomas de los empleados del sistema",
+    "icon": "fas fa-laptop-medical",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 14
+  }
+},
+{
+  "model": "security.module",
+  "pk": 14,
+  "fields": {
+    "url": "/rrhh/biometric/employee/",
+    "name": "Biom\u00e9trico",
+    "type": 4,
+    "description": "Permite administrar las asistencias de los empleados del sistema",
+    "icon": "far fa-clock",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 15
+  }
+},
+{
+  "model": "security.module",
+  "pk": 15,
+  "fields": {
+    "url": "/rrhh/biometric/admin/",
+    "name": "Biom\u00e9trico",
+    "type": 4,
+    "description": "Permite administrar las asistencias de los empleados del sistema",
+    "icon": "far fa-clock",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": 15
+  }
+},
+{
+  "model": "security.module",
+  "pk": 16,
+  "fields": {
+    "url": "/rrhh/reports/",
+    "name": "Reportes Diarios",
+    "type": 4,
+    "description": "Permite administrar los reportes diarios de los empleados del sistema",
+    "icon": "fas fa-chart-pie",
+    "image": "",
+    "is_vertical": true,
+    "is_active": true,
+    "is_visible": true,
+    "content_type": null
+  }
+},
+{
+  "model": "rrhh.symptomsemp",
+  "pk": 8,
+  "fields": {
+    "date_joined": "2020-07-29",
+    "emp": 2,
+    "body_temperature": 10,
+    "air_death": 1,
+    "dry_cough": 1,
+    "intestinal_discomfort": 0,
+    "headache": 1,
+    "lost_taste": 1,
+    "lost_olfato": 0,
+    "level_infected": true
+  }
+},
+{
+  "model": "rrhh.symptomsemp",
+  "pk": 9,
+  "fields": {
+    "date_joined": "2020-07-29",
+    "emp": 2,
+    "body_temperature": 42,
+    "air_death": 1,
+    "dry_cough": 1,
+    "intestinal_discomfort": 1,
+    "headache": 0,
+    "lost_taste": 1,
+    "lost_olfato": 0,
+    "level_infected": false
+  }
+},
+{
+  "model": "rrhh.symptomsemp",
+  "pk": 10,
+  "fields": {
+    "date_joined": "2020-07-29",
+    "emp": 6,
+    "body_temperature": 36,
+    "air_death": 1,
+    "dry_cough": 0,
+    "intestinal_discomfort": 1,
+    "headache": 0,
+    "lost_taste": 0,
+    "lost_olfato": 0,
+    "level_infected": false
+  }
+},
+{
+  "model": "rrhh.biometric",
+  "pk": 1,
+  "fields": {
+    "date_joined": "2020-07-28",
+    "date_joinedtime": "2020-07-29T04:35:44.154Z",
+    "hour": "21:35:44.154",
+    "emp": 1,
+    "hourEntradaM": "21:35:00",
+    "hourSalidaM": "21:36:00",
+    "hourEntradaV": "21:37:00",
+    "hourSalidaV": null,
+    "hourExtra": 0
+  }
+},
+{
+  "model": "rrhh.biometric",
+  "pk": 2,
+  "fields": {
+    "date_joined": "2020-07-29",
+    "date_joinedtime": "2020-07-29T15:42:19.586Z",
+    "hour": "08:42:19.586",
+    "emp": 2,
+    "hourEntradaM": "08:42:00",
+    "hourSalidaM": null,
+    "hourEntradaV": null,
+    "hourSalidaV": null,
+    "hourExtra": 0
+  }
+},
+{
+  "model": "rrhh.biometric",
+  "pk": 3,
+  "fields": {
+    "date_joined": "2020-07-29",
+    "date_joinedtime": "2020-07-29T19:35:24.130Z",
+    "hour": "12:35:24.130",
+    "emp": 6,
+    "hourEntradaM": null,
+    "hourSalidaM": null,
+    "hourEntradaV": "12:35:00",
+    "hourSalidaV": null,
+    "hourExtra": 0
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can view Acceso del usuario",
+    "content_type": 6,
+    "codename": "view_accessusers"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can delete Acceso del usuario",
+    "content_type": 6,
+    "codename": "delete_accessusers"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can view Compa\u00f1ia",
+    "content_type": 7,
+    "codename": "view_company"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view Respaldos de BD",
+    "content_type": 8,
+    "codename": "view_databasebackups"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Respaldos de BD",
+    "content_type": 8,
+    "codename": "add_databasebackups"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can delete Respaldos de BD",
+    "content_type": 8,
+    "codename": "delete_databasebackups"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can add Tipo de M\u00f3dulo",
+    "content_type": 9,
+    "codename": "add_moduletype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can change Tipo de M\u00f3dulo",
+    "content_type": 9,
+    "codename": "change_moduletype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can delete Tipo de M\u00f3dulo",
+    "content_type": 9,
+    "codename": "delete_moduletype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can view Tipo de M\u00f3dulo",
+    "content_type": 9,
+    "codename": "view_moduletype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can add M\u00f3dulo",
+    "content_type": 10,
+    "codename": "add_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can change M\u00f3dulo",
+    "content_type": 10,
+    "codename": "change_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can delete M\u00f3dulo",
+    "content_type": 10,
+    "codename": "delete_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can view M\u00f3dulo",
+    "content_type": 10,
+    "codename": "view_module"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can add Grupo M\u00f3dulo",
+    "content_type": 11,
+    "codename": "add_groupmodule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can change Grupo M\u00f3dulo",
+    "content_type": 11,
+    "codename": "change_groupmodule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can delete Grupo M\u00f3dulo",
+    "content_type": 11,
+    "codename": "delete_groupmodule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can view Grupo M\u00f3dulo",
+    "content_type": 11,
+    "codename": "view_groupmodule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 12,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 12,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 12,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 12,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can add Empleado",
+    "content_type": 13,
+    "codename": "add_employee"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can change Empleado",
+    "content_type": 13,
+    "codename": "change_employee"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can delete Empleado",
+    "content_type": 13,
+    "codename": "delete_employee"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can view Empleado",
+    "content_type": 13,
+    "codename": "view_employee"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can add Sintoma Empleado",
+    "content_type": 14,
+    "codename": "add_symptomsemp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can change Sintoma Empleado",
+    "content_type": 14,
+    "codename": "change_symptomsemp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can delete Sintoma Empleado",
+    "content_type": 14,
+    "codename": "delete_symptomsemp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can view Sintoma Empleado",
+    "content_type": 14,
+    "codename": "view_symptomsemp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can add Biometrico",
+    "content_type": 15,
+    "codename": "add_biometric"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can change Biometrico",
+    "content_type": 15,
+    "codename": "change_biometric"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can delete Biometrico",
+    "content_type": 15,
+    "codename": "delete_biometric"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can view Biometrico",
+    "content_type": 15,
+    "codename": "view_biometric"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Administrador",
+    "permissions": [
+      9,
+      10,
+      11,
+      12,
+      51,
+      52,
+      53,
+      54,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      22,
+      21,
+      23,
+      25,
+      26,
+      24,
+      31,
+      32,
+      33,
+      34,
+      27,
+      28,
+      29,
+      30,
+      39,
+      40,
+      41,
+      42
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Empleado",
+    "permissions": [
+      51,
+      52,
+      53,
+      54,
+      47,
+      48,
+      49,
+      50
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 3,
+  "fields": {
+    "name": "Superadmin",
+    "permissions": [
+      51,
+      52,
+      53,
+      54,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      39,
+      40,
+      41,
+      42
+    ]
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 1,
+  "fields": {
+    "groups": 1,
+    "modules": 1
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 2,
+  "fields": {
+    "groups": 1,
+    "modules": 5
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 3,
+  "fields": {
+    "groups": 1,
+    "modules": 2
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 4,
+  "fields": {
+    "groups": 1,
+    "modules": 3
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 5,
+  "fields": {
+    "groups": 1,
+    "modules": 11
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 6,
+  "fields": {
+    "groups": 1,
+    "modules": 10
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 7,
+  "fields": {
+    "groups": 1,
+    "modules": 7
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 8,
+  "fields": {
+    "groups": 1,
+    "modules": 6
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 9,
+  "fields": {
+    "groups": 1,
+    "modules": 9
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 10,
+  "fields": {
+    "groups": 1,
+    "modules": 8
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 11,
+  "fields": {
+    "groups": 1,
+    "modules": 4
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 12,
+  "fields": {
+    "groups": 2,
+    "modules": 9
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 13,
+  "fields": {
+    "groups": 2,
+    "modules": 10
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 14,
+  "fields": {
+    "groups": 1,
+    "modules": 12
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 15,
+  "fields": {
+    "groups": 2,
+    "modules": 13
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 17,
+  "fields": {
+    "groups": 2,
+    "modules": 14
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 18,
+  "fields": {
+    "groups": 1,
+    "modules": 15
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 19,
+  "fields": {
+    "groups": 1,
+    "modules": 16
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 20,
+  "fields": {
+    "groups": 3,
+    "modules": 8
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 21,
+  "fields": {
+    "groups": 3,
+    "modules": 9
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 22,
+  "fields": {
+    "groups": 3,
+    "modules": 10
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 23,
+  "fields": {
+    "groups": 3,
+    "modules": 11
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 24,
+  "fields": {
+    "groups": 3,
+    "modules": 12
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 25,
+  "fields": {
+    "groups": 3,
+    "modules": 15
+  }
+},
+{
+  "model": "security.groupmodule",
+  "pk": 26,
+  "fields": {
+    "groups": 3,
+    "modules": 16
+  }
+},
+{
+  "model": "user.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$BUrogoht0xF8$9f40rmCcSeh58LU2SFRVdHIR+7MLJqm4tQyRNUuhrl8=",
+    "last_login": "2020-07-29T22:01:06.088Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "William D\u00e1vila",
+    "last_name": "D\u00e1vila Vargas",
+    "email": "davilawilliam93@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-07-28T23:59:19.707Z",
+    "dni": "0928363993",
+    "image": "",
+    "is_change_password": false,
+    "token": "241f7f0b-c8e6-4829-ad5b-08262e23a921",
+    "groups": [
+      3
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$17ukjSIZgQXk$gFq3/yy52TjCh8QobQ7BMJ0SzRP3LA04PVMAHF2aiIY=",
+    "last_login": "2020-07-29T20:59:13.186Z",
+    "is_superuser": false,
+    "username": "0302660881",
+    "first_name": "Kevin Paul",
+    "last_name": "Locke Araguillin",
+    "email": "kevinpaul@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-07-29T00:14:04.866Z",
+    "dni": "0302660881",
+    "image": "",
+    "is_change_password": false,
+    "token": "479fc5e4-3758-43e1-a346-0c0d7c8f05e8",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$l7zfCVf2XNEa$hqmVpd6wvOcitLTiGCjEHnTTGs4AkPZ3Z6rF2HCFRI4=",
+    "last_login": "2020-07-29T20:55:59.535Z",
+    "is_superuser": false,
+    "username": "1105229189",
+    "first_name": "Luis Daniel",
+    "last_name": "Erazo Armijos",
+    "email": "lderazo1@utpl.edu.ec",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-07-29T15:28:14.349Z",
+    "dni": "1105229189",
+    "image": "",
+    "is_change_password": false,
+    "token": "649e845d-bea0-420b-b24a-54a4b2c5ebcd",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$FPaik9WDIWNd$zbVM/Vsho1d3eVfD8JWVovwjEItBqj6qVA4l0L3N1Es=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "1526586292",
+    "first_name": "Heidy Ximena",
+    "last_name": "Puchaicela Remache",
+    "email": "hxime16@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-07-29T15:29:17.718Z",
+    "dni": "1526586292",
+    "image": "",
+    "is_change_password": false,
+    "token": "ac8b9522-3946-40db-addf-465c0a716f63",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$ruw4WBM0DY5T$Utg/ZRI7oPCa6WX7+TKe5Koju+5hpgqWOX1kNlGcUC0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "1950195862",
+    "first_name": "Juan Andr\u00e9s",
+    "last_name": "Perez Salgado",
+    "email": "jperez@utpl.edu.ec",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-07-29T15:32:48.122Z",
+    "dni": "1950195862",
+    "image": "",
+    "is_change_password": false,
+    "token": "51bd65cf-a408-4917-a475-fc3ab03a80e0",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$0fLUBXnOqjE0$tjDayjY/D8GQjHGbIrfOy1+9xKYAoT4/OChrRBjTA64=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "1756495264",
+    "first_name": "Mar\u00eda del CIsne",
+    "last_name": "Armijos LIma",
+    "email": "marmijos@utpl.edu.ec",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-07-29T15:40:24.004Z",
+    "dni": "1756495264",
+    "image": "",
+    "is_change_password": false,
+    "token": "92c7edbb-b6bf-4898-98e4-2a89e665fe4b",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$V8WI5LZATTie$elGnHK3vViSQGx4B1xarIVbKPUJ+0SMCy85Mso7Sbn4=",
+    "last_login": "2020-07-29T19:35:12.476Z",
+    "is_superuser": false,
+    "username": "1102805049",
+    "first_name": "C\u00e9sar Augusto",
+    "last_name": "Erazo S\u00e1nchez",
+    "email": "cerazo1@utpl.edu.ec",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-07-29T19:34:16.955Z",
+    "dni": "1102805049",
+    "image": "",
+    "is_change_password": false,
+    "token": "5ff2d28b-6cdf-40c0-9749-c6457d347931",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "rrhh.employee",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "dependence": "administrativa",
+    "birthdate": "1994-07-28",
+    "cant_familiar": 3,
+    "gender": "hombre",
+    "state": true
+  }
+},
+{
+  "model": "rrhh.employee",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "dependence": "tecnica",
+    "birthdate": "1999-06-30",
+    "cant_familiar": 6,
+    "gender": "hombre",
+    "state": false
+  }
+},
+{
+  "model": "rrhh.employee",
+  "pk": 3,
+  "fields": {
+    "user": 4,
+    "dependence": "servicio_cliente",
+    "birthdate": "1997-09-05",
+    "cant_familiar": 4,
+    "gender": "mujer",
+    "state": true
+  }
+},
+{
+  "model": "rrhh.employee",
+  "pk": 4,
+  "fields": {
+    "user": 5,
+    "dependence": "administrativa",
+    "birthdate": "2000-07-29",
+    "cant_familiar": 6,
+    "gender": "hombre",
+    "state": true
+  }
+},
+{
+  "model": "rrhh.employee",
+  "pk": 5,
+  "fields": {
+    "user": 6,
+    "dependence": "administrativa",
+    "birthdate": "2020-07-29",
+    "cant_familiar": 8,
+    "gender": "mujer",
+    "state": true
+  }
+},
+{
+  "model": "rrhh.employee",
+  "pk": 6,
+  "fields": {
+    "user": 7,
+    "dependence": "tecnica",
+    "birthdate": "1980-02-26",
+    "cant_familiar": 5,
+    "gender": "hombre",
+    "state": true
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "date_joined": "2020-07-28T23:59:58.652Z",
+    "hour": "18:59:58.652",
+    "localhost": "192.168.56.1",
+    "hostname": "DESKTOP-7VNEDK2"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "date_joined": "2020-07-29T00:24:26.785Z",
+    "hour": "19:24:26.785",
+    "localhost": "192.168.56.1",
+    "hostname": "DESKTOP-7VNEDK2"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "date_joined": "2020-07-29T00:28:38.552Z",
+    "hour": "19:28:38.553",
+    "localhost": "192.168.56.1",
+    "hostname": "DESKTOP-7VNEDK2"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "date_joined": "2020-07-29T00:40:05.526Z",
+    "hour": "19:40:05.526",
+    "localhost": "192.168.56.1",
+    "hostname": "DESKTOP-7VNEDK2"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "date_joined": "2020-07-29T00:40:19.750Z",
+    "hour": "19:40:19.750",
+    "localhost": "192.168.56.1",
+    "hostname": "DESKTOP-7VNEDK2"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 6,
+  "fields": {
+    "user": 2,
+    "date_joined": "2020-07-29T00:41:27.677Z",
+    "hour": "19:41:27.677",
+    "localhost": "192.168.56.1",
+    "hostname": "DESKTOP-7VNEDK2"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 7,
+  "fields": {
+    "user": 1,
+    "date_joined": "2020-07-29T02:11:43.396Z",
+    "hour": "21:11:43.396",
+    "localhost": "192.168.56.1",
+    "hostname": "DESKTOP-7VNEDK2"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 8,
+  "fields": {
+    "user": 2,
+    "date_joined": "2020-07-29T02:22:23.653Z",
+    "hour": "21:22:23.653",
+    "localhost": "192.168.56.1",
+    "hostname": "DESKTOP-7VNEDK2"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "date_joined": "2020-07-29T02:42:51.600Z",
+    "hour": "21:42:51.600",
+    "localhost": "192.168.56.1",
+    "hostname": "DESKTOP-7VNEDK2"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 10,
+  "fields": {
+    "user": 2,
+    "date_joined": "2020-07-29T02:48:59.620Z",
+    "hour": "21:48:59.620",
+    "localhost": "192.168.56.1",
+    "hostname": "DESKTOP-7VNEDK2"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 11,
+  "fields": {
+    "user": 1,
+    "date_joined": "2020-07-29T12:57:55.750Z",
+    "hour": "05:57:55.750",
+    "localhost": "127.0.1.1",
+    "hostname": "inplanet004-H87-D3H"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 12,
+  "fields": {
+    "user": 1,
+    "date_joined": "2020-07-29T14:44:00.187Z",
+    "hour": "07:44:00.187",
+    "localhost": "127.0.1.1",
+    "hostname": "inplanet004-H87-D3H"
+  }
+},
+{
+  "model": "security.accessusers",
+  "pk": 13,
+  "fields": {
+    "user": 1,
+    "date_joined": "2020-07-29T14:46:56.844Z",
+    "hour": "07:46:56.844",
+    "localhost": "127.0.1.1",
+    "hostname": "inplanet004-H87-D3H"
+  }
+}
+]

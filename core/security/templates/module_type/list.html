@@ -1,0 +1,34 @@
+{% extends 'list.html' %}
+
+{% block columns %}
+    <th style="width: 10%;" class="text-center">Nro</th>
+    <th style="width: 55%;">Nombre</th>
+    <th style="width: 5%;">Icono</th>
+    <th style="width: 15%; text-align: center;">Estado</th>
+    <th style="width: 15%;" class="text-center"><i class="fas fa-wrench" aria-hidden="true"></i></th>
+{% endblock %}
+
+{% block rows %}
+    {% for i in object_list %}
+        <tr>
+            <td>{{ i.id }}</td>
+            <td>{{ i.name }}</td>
+            <td class="text-center"><i class="{{ i.get_icon }}" aria-hidden="true"></i></td>
+            <td class="text-center">
+                {% if i.is_active %}
+                    <b class="badge badge-success">Activo</b>
+                {% else %}
+                    <b class="badge badge-danger">Inactivo</b>
+                {% endif %}
+            </td>
+            <td class="text-center">
+                <a href="{% url 'module_type_update' i.id %}" data-toggle="tooltip" title="Editar registro" class="btn btn-warning btn-xs btn-flat">
+                    <i class="fas fa-edit" aria-hidden="true"></i>
+                </a>
+                <a href="{% url 'module_type_delete' i.id %}" rel="delete" data-toggle="tooltip" title="Eliminar registro" class="btn btn-danger btn-xs btn-flat">
+                    <i class="fas fa-trash" aria-hidden="true"></i>
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'list.html' %}
+{% block columns %}
+    <th class="text-center">Nro</th>
+    <th>Fecha de registro</th>
+    <th>Hora de Entrada M</th>
+    <th>hora de Salida M</th>
+    <th>Hora Entrada V</th>
+    <th>Hora Salida V</th>
+{% endblock %}
+
+{% block rows %}
+    {% for i in object_list %}
+        <tr>
+            <td>{{ i.id }}</td>
+            <td>{{ i.date_joined }}</td>
+            <td>{{ i.hourEntradaM }}</td>
+            <td>{{ i.hourSalidaM }}</td>
+            <td>{{ i.hourEntradaV }}</td>
+            <td>{{ i.hourSalidaV }}</td>
+        </tr>
+    {% endfor %}
+{% endblock %}

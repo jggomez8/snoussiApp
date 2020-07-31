@@ -1,0 +1,84 @@
+{% extends 'list.html' %}
+
+{% block columns %}
+    <th class="text-center">Nro</th>
+    <th>Empleado</th>
+    <th>Fecha de registro</th>
+    <th>Temperatura corporal</th>
+    <th>Falta de aire</th>
+    <th>Tos seca</th>
+    <th>Malestar intestinal</th>
+    <th>Dolor de Cabeza</th>
+    <th>Pérdida de gusto</th>
+    <th>Pérdida de olfato</th>
+    <th>Infectado</th>
+    <th class="text-center"><i class="fas fa-wrench" aria-hidden="true"></i></th>
+{% endblock %}
+
+{% block rows %}
+    {% for i in object_list %}
+        <tr>
+            <td>{{ i.id }}</td>
+            <td>{{ i.emp.user.get_full_name }}</td>
+            <td>{{ i.date_joined|date:'c' }}</td>
+            <td class="text-center">
+                <span class="badge badge-secondary">{{ i.body_temperature }} oC</span>
+            </td>
+            <td class="text-center">
+                {% if i.air_death == 1 %}
+                    <span class="badge badge-danger">Si</span>
+                {% else %}
+                    <span class="badge badge-success">No</span>
+                {% endif %}
+            </td>
+            <td class="text-center">
+                {% if i.dry_cough == 1 %}
+                    <span class="badge badge-danger">Si</span>
+                {% else %}
+                    <span class="badge badge-success">No</span>
+                {% endif %}
+            </td>
+            <td class="text-center">
+                {% if i.intestinal_discomfort == 1 %}
+                    <span class="badge badge-danger">Si</span>
+                {% else %}
+                    <span class="badge badge-success">No</span>
+                {% endif %}
+            </td>
+            <td class="text-center">
+                {% if i.headache == 1 %}
+                    <span class="badge badge-danger">Si</span>
+                {% else %}
+                    <span class="badge badge-success">No</span>
+                {% endif %}
+            </td>
+            <td class="text-center">
+                {% if i.lost_taste == 1 %}
+                    <span class="badge badge-danger">Si</span>
+                {% else %}
+                    <span class="badge badge-success">No</span>
+                {% endif %}
+            </td>
+            <td class="text-center">
+                {% if i.lost_olfato == 1 %}
+                    <span class="badge badge-danger">Si</span>
+                {% else %}
+                    <span class="badge badge-success">No</span>
+                {% endif %}
+            </td>
+            <td class="text-center">
+                {% if i.level_infected %}
+                    <span class="badge badge-danger">Si</span>
+                {% else %}
+                    <span class="badge badge-success">No</span>
+                {% endif %}
+            </td>
+            <td class="text-center">
+                <a href="{% url 'symptomsemp_admin_delete' i.id %}" rel="delete" data-toggle="tooltip"
+                   title="Eliminar registro" class="btn btn-danger btn-xs btn-flat">
+                    <i class="fas fa-trash" aria-hidden="true"></i>
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+{% endblock %}

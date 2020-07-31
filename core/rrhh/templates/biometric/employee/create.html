@@ -1,0 +1,49 @@
+{% extends 'form.html' %}
+{% load static %}
+{% block head_form %}
+    <script src="{% static 'biometric/employee/js/form.js' %}"></script>
+{% endblock %}
+{% block content %}
+    <div class="card {{ comp.card }}">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="fas fa-search"></i>
+                {{ title }}
+            </h3>
+            <div class="card-tools">
+                <small>Su último acceso al sistema fue el {{ request.user.last_login }}</small>
+            </div>
+        </div>
+        <div class="card-body" style="display: block;">
+            <div class="container-fluid">
+                <h1 id="time" class="text-center border"></h1>
+                <div class="form-group">
+                    <label>Ingrese su número de cedula:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="dni" maxlength="10" required autocomplete="off"
+                               value="{{ request.user.dni }}" disabled>
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-primary btn-biometric" data-id="horaEntradaM">
+                                <i class="fas fa-clock"></i> EntradaM
+                            </button>
+                            <button type="button" class="btn btn-info btn-biometric" data-id="horaSalidaM">
+                                <i class="fas fa-clock"></i> SalidaM
+                            </button>
+                            <button type="button" class="btn btn-success btn-biometric" data-id="horaEntradaV">
+                                <i class="fas fa-clock"></i> EntradaV
+                            </button>
+                            <button type="button" class="btn btn-warning btn-biometric" data-id="horaSalidaV">
+                                <i class="fas fa-clock"></i> SalidaV
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a href="{{ list_url }}" class="btn btn-danger btn-flat btn-block">
+                <i class="fas fa-times"></i> Cancelar
+            </a>
+        </div>
+    </div>
+{% endblock %}

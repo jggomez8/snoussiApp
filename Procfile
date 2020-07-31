@@ -1,0 +1,1 @@
+web: gunicorn snoussiApp.wsgi:application --log-file -

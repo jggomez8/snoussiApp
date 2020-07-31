@@ -1,0 +1,44 @@
+{% extends 'list.html' %}
+
+{% block columns %}
+    <th>Nro</th>
+    <th>Nombres</th>
+    <th>Cedula</th>
+    <th>Dependencia</th>
+    <th>Genero</th>
+    <th>Edad</th>
+    <th>Cant.Familiar</th>
+    <th>Estado</th>
+    <th class="text-center">Opciones</th>
+{% endblock %}
+
+{% block rows %}
+    {% for i in object_list %}
+        <tr>
+            <td>{{ i.id }}</td>
+            <td>{{ i.user.get_full_name }}</td>
+            <td>{{ i.user.dni }}</td>
+            <td>{{ i.get_dependence_display }}</td>
+            <td>{{ i.get_gender_display }}</td>
+            <td class="text-center">{{ i.get_age }}</td>
+            <td class="text-center">{{ i.cant_familiar }}</td>
+            <td class="text-center">
+                {% if i.state %}
+                    <span class="badge badge-success">Activo</span>
+                {% else %}
+                    <span class="badge badge-danger">Inactivo</span>
+                {% endif %}
+            </td>
+            <td class="text-center">
+                <a href="{% url 'employee_update' i.id %}" data-toggle="tooltip" title="Editar registro"
+                   class="btn btn-warning btn-xs btn-flat">
+                    <i class="fas fa-edit" aria-hidden="true"></i>
+                </a>
+                <a href="{% url 'employee_delete' i.id %}" rel="delete" data-toggle="tooltip" title="Eliminar registro"
+                   class="btn btn-danger btn-xs btn-flat">
+                    <i class="fas fa-trash" aria-hidden="true"></i>
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+{% endblock %}
