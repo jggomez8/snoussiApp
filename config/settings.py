@@ -91,13 +91,24 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0.3/ref/settings/#databases
-
-DATABASES = db.DATABASES
 '''
+DATABASES = db.DATABASES
+
 DATABASES = {
     'default': dj_database_url.config()
 }
 '''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'covid',
+        'USER': 'postgres',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost',
+        'PORT': '5432',
+        'ATOMIC_REQUESTS': True
+    }
+}
 # Password validation
 # https://docs.djangoproject.com/en/3.0.3/ref/settings/#auth-password-validators
 

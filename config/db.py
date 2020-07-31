@@ -1,4 +1,6 @@
 import os
+import django_heroku
+import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -10,7 +12,7 @@ SQLITE = {
 }
 
 # psycopg2
-
+'''
 POSTGRESQL = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -52,7 +54,7 @@ SQLSERVER = {
         },
     },
 }
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
